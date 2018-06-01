@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --nav-color: #fff;
+  --body-color: #F1F7FE;
+  --text: #859494;
+  --main: #8245FE;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type="text"] {
+  border: none;
+  width: 100px;
+  background-color: var(--nav-color);
+  margin-left: 10px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}

@@ -1,0 +1,43 @@
+<nav>
+  <ul>
+    <li>
+      <a routerLink=''>
+        <img src="../../../assets/icons/logo.svg" alt="Logeishon" width="56px" height="36px">
+
+      </a>
+    </li>
+    <li>
+      <a routerLink='/home' routerLinkActive="active" #rla="routerLinkActive">
+        Inicio
+      </a>
+    </li>
+    <li>
+      <a routerLink='/messages' routerLinkActive="active">
+        Mensajes
+      </a>
+    </li>
+    <li>
+      <a routerLink=''>
+        Documentos
+      </a>
+    </li>
+    <li>
+      <a routerLink=''>
+        Sugerencias
+      </a>
+    </li>
+    <li class="right">
+      <a routerLink=''>
+        <mat-icon>search</mat-icon>
+        <input type="text" placeholder="Buscar...">
+      </a>
+    </li>
+    <li>
+      <a (click)="toggleAction()">
+        <img src="../../../assets/icons/iconsw.svg" alt="Kiwi standing on oval" width="24px" height="24px" *ngIf="!side">
+        <img src="../../../assets/icons/iconswclose.svg" alt="Kiwi standing on oval" width="24px" height="24px" *ngIf="side">
+      </a>
+    </li>
+  </ul>
+</nav>
+<!--Bob {{ rla.isActive ? '(already open)' : ''}}-->
